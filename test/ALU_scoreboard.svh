@@ -17,9 +17,9 @@ class ALU_scoreboard extends uvm_scoreboard;
         scoreboard_port = new("scoreboard_port", this); 
     endfunction: build_phase
 
-    task write(ALU_sequence_item item);
+    function void write(ALU_sequence_item item);
         trasaction.push_back(item);
-    endtask: write
+    endfunction: write
 
     task run_phase(uvm_phase phase);
         super.run_phase(phase);
