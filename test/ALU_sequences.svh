@@ -1,4 +1,4 @@
-class ALU_base_sequence extends uvm_sequence;
+class ALU_base_sequence extends uvm_sequence #(ALU_sequence_item);
     `uvm_object_utils(ALU_base_sequence)
 
     ALU_sequence_item item;
